@@ -8,7 +8,7 @@
 
 
 import React from 'react';
-import AppContainer from '../TugasPemMobile235/src/component/main/AppContainer';
+import AppContainer from '../PemrogramanMobile/src/component/main/AppContainer';
 
 class App extends React.Component {
   render() {
