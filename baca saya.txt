@@ -1,0 +1,16 @@
+Pastikan tiap environment sudah terinstall semua:
+https://reactnative.dev/docs/environment-setup
+
+Jalankan pada terminal code editor atau cmd dengan mengetikkan "npm install"
+jika sudah, terinstall dependency, ketik "react-native start" pada terminal
+Buka terminal baru, ketik "react-native run-android" jika ingin menjalankan dengan device android.
+
+Direktori Tugas: src -> component -> other -> Tugas(n).js
+src -> component -> main -> AppContainer.js sebagai navigasi bawah.
+
+Untuk update tugas baru akan saya push ke repository ini.
+
+Terimakasih.
+
+Yeremia Alfa Dio
+NIM: 18050974002
