@@ -13,6 +13,7 @@ import SwitchMode from '../other/Tugas2';
 import Calculator from '../other/Tugas3';
 import FormData from '../other/Tugas5';
 import Icon from 'react-native-vector-icons/Ionicons';
+import TodoApp from '../other/UTS';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,16 @@ const AppContainer = () => {
               iconName = focused
                 ? 'ios-code-slash-outline'
                 : 'ios-code-slash-sharp';
-            } else if (route.name === 'Calculator') {
+
+            }
+            else if (route.name === 'To-do App') {
+              // iconName = focused
+              //   ? 'ios-code-slash-outline'
+              //   : 'ios-code-slash-sharp';
+              iconName = focused ? 'ios-reader-sharp' : 'ios-reader-outline';
+
+            }
+            else if (route.name === 'Calculator') {
               iconName = focused ? 'ios-calculator-sharp' : 'ios-calculator-outline';
             }
             else if (route.name === 'Data Diri') {
@@ -44,9 +54,10 @@ const AppContainer = () => {
           inactiveTintColor: 'gray',
           style:{paddingBottom:5, height:55}
         }}>
-        <Tab.Screen name="Pengalih Mode" component={SwitchMode} />
-        <Tab.Screen name="Calculator" component={Calculator} />
-        <Tab.Screen name="Data Diri" component={FormData} />
+        <Tab.Screen name="Tugas2" component={SwitchMode} />
+        <Tab.Screen name="UTS" component={TodoApp} />
+        <Tab.Screen name="Tugas3" component={Calculator} />
+        <Tab.Screen name="Tugas5" component={FormData} />
       </Tab.Navigator>
     </NavigationContainer>
   );
